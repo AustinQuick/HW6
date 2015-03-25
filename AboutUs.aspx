@@ -7,32 +7,32 @@
 <head runat="server"> 
     
     <title>About Us</title> 
-       
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+
 </head>
 
 <body>
-    <div>
-        Wicked Easy Recipes
+
+   <div class="header">
+        <h2 class="auto-style1" style="text-align: center">Wicked Easy Recipes</h2>
+
     </div>
 
-   
-
-    <br />
-
-    <div>
-        Using 5 Ingredients or Less!
-    </div>
+    <h4 class="auto-style1" style="font-weight: normal; text-align: center">Using 5 Ingredients or Less!</h4>
 
     <br />
 
     <form id="form1" runat="server">
+        <div class="auto-style1" style="text-align: center">
         <a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp;
         <a href="NewRecipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp;
         <a href="AboutUs.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp;
         <a href="ContactUs.aspx" style="color: #696969">Contact Us</a>&nbsp; |&nbsp
 
+    </form>
 
-   <p style="align-content:center; ">
+
+   <p style="padding: 20px; text-align: center; margin-right: 400px; margin-left: 400px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Nulla aliquet, tellus sit amet feugiat euismod, velit lectus pellentesque nisi, non eleifend quam ipsum at arcu. 
         Sed semper mi a tristique porttitor.

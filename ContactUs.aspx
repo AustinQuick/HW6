@@ -1,38 +1,29 @@
-﻿﻿﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ContactUs.aspx.vb" Inherits="_default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ContactUs.aspx.vb" Inherits="_default" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
-    <title>HW6</title>
-
+    <title>Contact Info</title>
 </head>
 
 <body>
-    
-      <div>
-        Wicked Easy Recipes
+    <div class="header">
+        <h2 class="auto-style1">Wicked Easy Recipes</h2>
+
     </div>
 
-   
-
-    <br />
-
-    <div>
-        Using 5 Ingredients or Less!
-    </div>
+    <h4 class="auto-style1" style="font-weight: normal">Using 5 Ingredients or Less!</h4>
 
     <br />
 
     <form id="form1" runat="server">
+        <div class="auto-style1">
         <a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp;
         <a href="NewRecipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp;
         <a href="AboutUs.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp;
-        <a href="ContactUs.aspx" style="color: #696969">Contact Us</a>&nbsp; |&nbsp
-
-
-
+        <a href="ContactUs.aspx" style="color: #696969">Contact Us</a>&nbsp; |&nbsp  
 
 </body>
 </html>

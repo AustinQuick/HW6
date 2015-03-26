@@ -27,5 +27,9 @@
 
     </form>
 
+    <br />
+
+    <asp:Table ID="Table1" runat="server"></asp:Table>
+
 </body>
 </html>

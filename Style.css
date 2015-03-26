@@ -1,2 +1,13 @@
 body {
     background-color:#D2B48C;}
+	
+.table {
+	font-underline:false;
+    border-radius:5px;
+    padding:5px;
+    color:#FFFFFF;
+    width: auto;
+}
+
+.val{
+	color: Red}

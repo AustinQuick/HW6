@@ -15,12 +15,12 @@
 
     </div>
 
-    <h4 class="auto-style1" style="font-weight: normal; text-align: center">Using 5 Ingredients or Less!</h4>
+    <h4 class="auto-style1" style="font-weight: normal; text-align: center"Using 5 Ingredients or Less!</h4>
 
     <br />
 
-    <form id="form1" runat="server">
-        <div class="auto-style1" style="text-align: center">
+    <form id="form1" runat="server" style="vertical-align: middle; text-align: center">
+        <div class="auto-style1">
         <a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp;
         <a href="NewRecipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp;
         <a href="AboutUs.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp;
@@ -62,7 +62,7 @@
             <EditItemTemplate>
                 </EditItemTemplate>
             <InsertItemTemplate>
-                <table class="table">
+                <table class="table" style="text-align: center">
                     <tr>
                         <td>
                             Recipe: 

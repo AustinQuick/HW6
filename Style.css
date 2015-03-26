@@ -2,7 +2,7 @@ body {
     background-color:#D2B48C;}
 	
 .table {
-	font-underline:false;
+	content:center;
     border-radius:5px;
     padding:5px;
     color:#FFFFFF;
@@ -11,3 +11,4 @@ body {
 
 .val{
 	color: Red}
+	

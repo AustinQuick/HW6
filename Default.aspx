@@ -26,7 +26,7 @@
         <a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp;
         <a href="NewRecipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp;
         <a href="AboutUs.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp;
-        <a href="ContactUs.aspx" style="color: #696969">Contact Us</a>&nbsp; |&nbsp
+        <a href="ContactUs.aspx" style="color: #696969">Contact Us</a&nbsp; |&nbsp
 
    <div style="align-content:center">
         <div class="table">
@@ -66,7 +66,7 @@
         
             </div>
         
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="sql_NewRecipe" HorizontalAlign="Center" style="margin-left:auto;margin-right:auto;" CellPadding="4" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="sql_NewRecipe" HorizontalAlign="Center" style="margin-left:auto;margin-right:auto; margin-bottom: 26px;" CellPadding="4" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px">
             <Columns>
                 <asp:BoundField DataField="recipeName" HeaderText="Recipe" SortExpression="recipeName" ControlStyle-BackColor="#FFFF99" >
 <ControlStyle BackColor="#FFFF99"></ControlStyle>

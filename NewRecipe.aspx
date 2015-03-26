@@ -24,7 +24,7 @@
         <a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp;
         <a href="NewRecipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp;
         <a href="AboutUs.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp;
-        <a href="ContactUs.aspx" style="color: #696969"Contact Us</a&nbsp; |&nbsp
+        <a href="ContactUs.aspx" style="color: #696969">Contact Us</a>&nbsp; |&nbsp
 
         <br />
 

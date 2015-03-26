@@ -33,13 +33,13 @@
 
         <br /><br />
 
-        <asp:TextBox ID="email" runat="server" Height="20px" Width="260px"></asp:TextBox>
+        <asp:TextBox ID="email" runat="server" Height="20px" Width="260px" BackColor="LightCoral"></asp:TextBox>
 
         <br /><br /><br /><br />
 
         Your Message: <br /><br />
 
-        <asp:TextBox ID="message" runat="server" Height="100px" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="message" runat="server" Height="100px" Width="400px" BackColor="LightCoral"></asp:TextBox>
 
         <br /><br /><br />
 

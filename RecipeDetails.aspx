@@ -28,7 +28,18 @@
 
         <br />
 
-<asp:SqlDataSource ID="sql_NewRecipe" runat="server" ConnectionString="<%$ ConnectionStrings:AMQuick_HW6 %>" DeleteCommand="DELETE FROM [AMQuick_HW6] WHERE [RecipeID] = @RecipeID" InsertCommand="INSERT INTO [AMQuick_HW6] ([recipeName], [submittedBy], [ingredient1], [ingredient2], [ingredient3], [ingredient4], [ingredient5], [preperation], [notes]) VALUES (@recipeName, @submittedBy, @ingredient1, @ingredient2, @ingredient3, @ingredient4, @ingredient5, @preperation, @notes)" SelectCommand="SELECT * FROM [AMQuick_HW6]" UpdateCommand="UPDATE [AMQuick_HW6] SET [recipeName] = @recipeName, [submittedBy] = @submittedBy, [ingredient1] = @ingredient1, [ingredient2] = @ingredient2, [ingredient3] = @ingredient3, [ingredient4] = @ingredient4, [ingredient5] = @ingredient5, [preperation] = @preperation, [notes] = @notes WHERE [recipeID] = @recipeID">
+        <asp:SqlDataSource ID="sql_RecipeDetails" runat="server" ConnectionString="<%$ 
+            ConnectionStrings:AMQuick_HW6 %>" DeleteCommand="DELETE FROM [AMQuick_HW6] WHERE 
+            [recipeID] = @recipeID" InsertCommand="INSERT INTO [AMQuick_HW6] ([recipeName], 
+            [submittedBy], [ingredient1], [ingredient2], [ingredient3], [ingredient4], [ingredient5],
+             [preperation], [notes]) VALUES (@recipeName, @submittedBy, @ingredient1, @ingredient2, 
+            @ingredient3, @ingredient4, @ingredient5, @preperation, @notes)" SelectCommand="SELECT * 
+            FROM [AMQuick_HW6] WHERE ([recipeID] = @recipeID)" UpdateCommand="UPDATE [AMQuick_HW6] SET 
+            [recipeName] = @recipeName, [submittedBy] = @submittedBy, [ingredient1] = @ingredient1, 
+            [ingredient2] = @ingredient2, [ingredient3] = @ingredient3, [ingredient4] = @ingredient4, 
+            [ingredient5] = @ingredient5, [preperation] = @preperation, [notes] = @notes WHERE [recipeID] 
+            = @recipeID">            
+            
             <DeleteParameters>
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </DeleteParameters>
@@ -43,6 +54,11 @@
                 <asp:Parameter Name="preperation" Type="String" />
                 <asp:Parameter Name="notes" Type="String" />
             </InsertParameters>
+
+            <SelectParameters>
+                <asp:QueryStringParameter Name="RecipeID" QueryStringField="RecipeID" Type="Int32" />
+            </SelectParameters>        
+
             <UpdateParameters>
                 <asp:Parameter Name="recipeName" Type="String" />
                 <asp:Parameter Name="submittedBy" Type="String" />

@@ -24,11 +24,11 @@
         <a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp;
         <a href="NewRecipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp;
         <a href="AboutUs.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp;
-        <a href="ContactUs.aspx" style="color: #696969">Contact Us</a>&nbsp; |&nbsp
+        <a href="ContactUs.aspx" style="color: #696969">Contact Us</a&nbsp; |&nbsp
 
         <br />
 
-<asp:SqlDataSource ID="sql_NewRecipe" runat="server" ConnectionString="<%$ ConnectionStrings:AMQuick_HW6 %>" DeleteCommand="DELETE FROM [AMQuick_HW6] WHERE [RecipeID] = @RecipeID" InsertCommand="INSERT INTO [AMQuick_HW6] ([recipeName], [submittedBy], [ingredient1], [ingredient2], [ingredient3], [ingredient4], [ingredient5], [preperation], [notes]) VALUES (@recipeName, @submittedBy, @ingredient1, @ingredient2, @ingredient3, @ingredient4, @ingredient5, @preperation, @notes)" SelectCommand="SELECT * FROM [AMQuick_HW6]" UpdateCommand="UPDATE [AMQuick_HW6] SET [recipeName] = @recipeName, [submittedBy] = @submittedBy, [ingredient1] = @ingredient1, [ingredient2] = @ingredient2, [ingredient3] = @ingredient3, [ingredient4] = @ingredient4, [ingredient5] = @ingredient5, [preperation] = @preperation, [notes] = @notes WHERE [recipeID] = @recipeID">
+<asp:SqlDataSource ID="sql_NewRecipe" runat="server" ConnectionString="<%$ ConnectionStrings:AMQuick_HW6 %>" DeleteCommand="DELETE FROM [AMQuick_HW6] WHERE [RecipeID] = @RecipeID" InsertCommand="INSERT INTO [AMQuick_HW6] ([recipeName], [submittedBy], [ingredient1], [ingredient2], [ingredient3], [ingredient4], [ingredient5], [preparation], [notes]) VALUES (@recipeName, @submittedBy, @ingredient1, @ingredient2, @ingredient3, @ingredient4, @ingredient5, @preparation, @notes)" SelectCommand="SELECT * FROM [AMQuick_HW6]" UpdateCommand="UPDATE [AMQuick_HW6] SET [recipeName] = @recipeName, [submittedBy] = @submittedBy, [ingredient1] = @ingredient1, [ingredient2] = @ingredient2, [ingredient3] = @ingredient3, [ingredient4] = @ingredient4, [ingredient5] = @ingredient5, [preparation] = @preparation, [notes] = @notes WHERE [recipeID] = @recipeID" ProviderName="System.Data.SqlClient">
             <DeleteParameters>
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </DeleteParameters>
@@ -40,7 +40,7 @@
                 <asp:Parameter Name="ingredient3" Type="String" />
                 <asp:Parameter Name="ingredient4" Type="String" />
                 <asp:Parameter Name="ingredient5" Type="String" />
-                <asp:Parameter Name="preperation" Type="String" />
+                <asp:Parameter Name="preparation" Type="String" />
                 <asp:Parameter Name="notes" Type="String" />
             </InsertParameters>
             <UpdateParameters>
@@ -51,7 +51,7 @@
                 <asp:Parameter Name="ingredient3" Type="String" />
                 <asp:Parameter Name="ingredient4" Type="String" />
                 <asp:Parameter Name="ingredient5" Type="String" />
-                <asp:Parameter Name="preperation" Type="String" />
+                <asp:Parameter Name="preparation" Type="String" />
                 <asp:Parameter Name="notes" Type="String" />
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </UpdateParameters>
@@ -96,7 +96,6 @@
                         </td>
                         <td>
                             <asp:RequiredFieldValidator CssClass="val" ID="valIngredient" runat="server" ErrorMessage="Please enter at least 1 ingredient." ControlToValidate="tIngredient1"></asp:RequiredFieldValidator>
-
                         </td>
                     </tr>
                     <tr>
@@ -147,13 +146,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Preperation:
+                            Preparation:
                         </td>
                         <td>
-                            <asp:TextBox ID="tPreperation" runat="server" Text='<%# Bind("preperation")%>' />
+                            <asp:TextBox ID="tPreparation" runat="server" Text='<%# Bind("preparation")%>' />
                         </td>
                         <td>
-                            <asp:RequiredFieldValidator CssClass="val" ID="valPreperation" runat="server" ErrorMessage="Please enter preperation instructions." ControlToValidate="tPreperation" Font-Bold="False" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator CssClass="val" ID="valPreparation" runat="server" ErrorMessage="Please enter preparation instructions." ControlToValidate="tPreparation" Font-Bold="False" SetFocusOnError="True"></asp:RequiredFieldValidator>
 
                         </td>
                     </tr>
